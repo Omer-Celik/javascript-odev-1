@@ -3,7 +3,7 @@ let nameRequest = prompt("Adınızı giriniz");
 document.getElementById("myName").innerHTML = nameRequest.toUpperCase(); //isim büyük harfli olacak
 
 //  2.adım: ekrana anlık saat bilgisini yazdır
-setInterval(showTime,0);
+setInterval(showTime,1000);
 function showTime() {
     let bugun = new Date();
     document.getElementById("myClock").innerHTML = bugun.toLocaleTimeString() + "," + gun;
